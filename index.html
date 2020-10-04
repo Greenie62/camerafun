@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+   <link rel="stylesheet" href="style.css">
+   <link rel="search icon" href="#">
+    <title>Brat Vue 📸</title>
+</head>
+<body>
+    <div class="app">
+        <div class="header">
+            <h1 class="header-h1-one"></h1>
+            <h1 class="header-h1-icon">📸</h1>
+            <h1 class="header-h1-two">Camera </h1>
+        </div>
+        
+        <div class="screen-body">
+            <div class="screen-div"></div>
+            <div class="captions-div"></div>
+            <div class="buttons-div">
+                <button class="pictureBtn zoombtns"><i class="iconbtns fas fa-camera"></i></button>
+                <button class="audioBtn zoombtns"><i class="iconbtns fas fa-microphone"></i></button>
+            </div>
+            <div class="option-column"></div>
+            <div class="slide-row">
+                <div class="rangediv">
+                    <label for="setting">Setting:</label>
+                    <input type="range" class='rangeinput' name="setting" id="setting">
+                    <small class="text-muted">Adjust the settings... <span class='rangevalue'></span></small>
+                 </div> 
+                 
+                 <button class="commentBtn">Show Comments</button>
+
+            
+            </div>
+        </div>
+    </div>
+
+    <script src="js/alert.js"></script>
+    <script src="js/buttons.js"></script>
+    <script src="js/camera.js"></script> 
+    <script src="js/script.js"></script>
+    <script src="js/comments.js"></script>
+</body>
+</html>
