@@ -7,7 +7,7 @@ rangeInput.oninput=(e)=>{
 
     const { value } = e.target
 
-    rangeValueDOM.innerHTML = value
+    // rangeValueDOM.innerHTML = value
 
     adjustImage(currentOption,value)
 }

@@ -139,6 +139,11 @@
     color:gray;
 }
 
+.alert{
+    color:white;
+    left:15px;
+}
+
 
 .option-column{
     width:20%;
@@ -177,7 +182,7 @@
 .caption-div{
     top:-55%;
     width:70%;
-    height:20%;
+    height:30%;
     left:5%;
     /* border:2px solid yellow; */
     text-align:center;
@@ -185,6 +190,7 @@
 
 .fadein-h2{
     letter-spacing:2px;
+    text-shadow:1px 1px white;
 }
 
 .greencheck{

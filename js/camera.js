@@ -7,11 +7,12 @@ myVideo.muted = true;
 
 var cameraBtn = document.querySelector(".pictureBtn")
 var audioBtn = document.querySelector(".audioBtn");
-var toggleCanvasBtn = document.querySelector(".canvasToggleBtn");
+// var toggleCanvasBtn = document.querySelector(".canvasToggleBtn");
 var canvas = document.querySelector("#picturecanvas");
 var canvasDiv = document.querySelector(".canvasDiv")
 var greenCheck = document.querySelector(".greencheck");
 var galleryDiv = document.querySelector(".gallery");
+var alertDOM = document.querySelector(".alert");
 
 canvasDiv.style.display = 'none'
 
@@ -44,6 +45,7 @@ var recognition = new SS();
 
 recognition.onspeechstart=()=>{
     console.log("Recording has started")
+    
 }
 
 recognition.onspeechend=()=>{
@@ -64,6 +66,11 @@ audioBtn.onclick=startRecording;
 
 
 function startRecording(){
+    alertDOM.innerHTML= "Start speaking!"
+    setTimeout(()=>{
+        alertDOM.innerHTML= ""
+
+    },1200)
     recognition.start()
 }
 
@@ -96,15 +103,15 @@ function takePic(){
 
 
 
-toggleCanvasBtn.onclick=function(){
-    console.log(canvasDiv.style.display)
-    if(canvasDiv.style.display === "block"){
-        canvasDiv.style.display='none'
-    }
-    else{
-        canvasDiv.style.display = "block"
-    }
-}
+// toggleCanvasBtn.onclick=function(){
+//     console.log(canvasDiv.style.display)
+//     if(canvasDiv.style.display === "block"){
+//         canvasDiv.style.display='none'
+//     }
+//     else{
+//         canvasDiv.style.display = "block"
+//     }
+// }
 
 
 greenCheck.onclick=savePic;
