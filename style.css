@@ -59,7 +59,7 @@
 .screen-div{
     height:80%;
     width:80%;
-    border:1px solid red;
+    /* border:1px solid red; */
 }
 
 .video{
@@ -80,23 +80,38 @@
     height:20%;
     top:60%;
     left:20%;
-    border:1px solid orange;
+    /* border:1px solid orange; */
     display:flex;
     align-items:center;
     justify-content: center;
     flex-direction:column;
 }
 
+.comment-h5{
+    /* text-shadow:1px 1px white; */
+    color:gray;
+}
+
+.canvasToggleBtn{
+    left:40%;
+    top:30px;
+    width:100px;
+
+}
+
 .commentBtn{
     background:red;
+    width:100px;
     left:65%;
 }
+
+
 
 .buttons-div{
     width:20%;
     height:20%;
     top:40%;
-    border:1px solid red;
+    /* border:1px solid red; */
     display:flex;
     align-items:center;
     justify-content: space-evenly;
@@ -109,15 +124,18 @@
 }
 
 .iconbtns{
-    transform:scale(2)
+    transform:scale(2);
+    z-index:2;
+    color:gray;
 }
+
 
 .option-column{
     width:20%;
     left:80%;
     height:80%;
     top:0%;
-    border:1px solid purple;
+    /* border:1px solid purple; */
     display:flex;
     flex-direction:column;
     align-items:stretch;
@@ -141,4 +159,68 @@
 .rangeinput{
     width:80%;
     height:20px;
+    z-index:5;
 }
+
+
+
+.caption-div{
+    top:-55%;
+    width:70%;
+    height:20%;
+    left:5%;
+    /* border:2px solid yellow; */
+    text-align:center;
+}
+
+.fadein-h2{
+    letter-spacing:2px;
+}
+
+.greencheck{
+    color:green;
+    transform:scale(2);
+    z-index:3;
+    top:-35px;
+    left:150px;
+    
+}
+
+.canvasDiv{
+    left:15%;
+    border:1px solid purple;
+    top:-750px;
+    width:200px;
+    height:200px;
+    /* background:black; */
+}
+
+
+#picturecanvas{
+    height:200px;
+    width:200px;
+   
+}
+
+
+.gallery{
+    height:200px;
+    width:100%;
+    border:2px solid orange;
+    display:grid;
+    grid-template-columns:repeat(3,1fr)
+}
+
+.saveimg{
+    width:100px;
+    height:100px;
+}
+
+/* 
+@media screen and(min-height:500){
+    .slide-row{
+        height:150px;
+        width:100%;
+        background:orange;
+    }
+} */

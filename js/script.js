@@ -24,6 +24,8 @@ function adjustImage(option,value){
 
     let filterValue = `${option}(${value}${currentUnit})`
 
+    canvas.setAttribute("data-filter",filterValue)
+
     myVideo.style.filter = filterValue
 }
 
